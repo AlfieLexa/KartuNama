@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartu Programming</title>
+    <link rel="icon" type="icon" href="Icon.png">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-galaxy-background_23-2148973123.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        a {
+            color: purple;
+        }
+
+        .profile-card {
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            width: 90%;
+            max-width: 700px;
+            transition: transform 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .profile-header {
+            background: linear-gradient(135deg, #6E3CBC, #9A68ED);
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+
+        .profile-header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .profile-card:hover .profile-header img {
+            transform: scale(1.1);
+        }
+
+        .profile-header h2 {
+            margin: 10px 0 5px;
+            font-size: 24px;
+            letter-spacing: 1.5px;
+        }
+
+        .profile-header p {
+            font-size: 16px;
+            margin: 0;
+            opacity: 0.8;
+        }
+
+        .profile-body {
+            padding: 30px;
+            text-align: left;
+        }
+
+        .profile-body h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #6E3CBC;
+            display: inline-block;
+            padding-bottom: 5px;
+            color: #333;
+        }
+
+        .profile-body p {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .profile-footer {
+            display: flex;
+            justify-content: flex-start;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .profile-footer a {
+            text-decoration: none;
+            color: #6E3CBC;
+            font-size: 20px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .profile-footer a:hover {
+            color: #9A68ED;
+        }
+
+        .profile-footer a i {
+            font-size: 24px;
+        }
+
+        @media (min-width: 768px) {
+            .profile-card {
+                flex-direction: row;
+            }
+
+            .profile-header {
+                width: 40%;
+                padding: 30px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+            }
+
+            .profile-body {
+                width: 60%;
+                padding: 30px;
+                text-align: left;
+            }
+
+            .profile-footer {
+                position: absolute;
+                bottom: 15px;
+                left: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="profile-header">
+            <img src="https://alfielexa.github.io/id-axl/Alfie.jpeg" alt="Profile Picture">
+            <h2>M. Malik Hanafi</h2>
+            <p>Beginner Full Stack Developer</p>
+            <div class="profile-footer">
+                <a href="https://www.linkedin.com/in/johndoe" target="_blank" title="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/johndoe" target="_blank" title="GitHub Profile"><i class="fab fa-github"></i></a>
+                <a href="mailto:john.doe@example.com" title="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="profile-body">
+            <h3>About Me</h3>
+            <p>
+                A beginner full stack programmer who has mastered HTML, CSS, JavaScript, etc. Has a passion for creating a progressive generation of the nation.
+            </p>
+            <h3>Skills</h3>
+            <p>
+                - Frontend: HTML, CSS, JavaScript, TypeScript.<br>
+                - Backend: Node.js, Python, C, Ruby.<br>
+                - Tools: Git, <a href="https://alfielexa.github.io/en-axl/">GitHub</a>.
+            </p>
+        </div>
+    </div>
+
+    <!-- Tambahkan link FontAwesome untuk ikon media sosial -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
